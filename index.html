@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Receta tradicionale kosovare, menyja e javës dhe lista e blerjeve." />
+  <meta name="theme-color" content="#9a3412" />
+  <title>Kuzhina Kosovare</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="logo"><span aria-hidden="true">🍲</span> Kuzhina Kosovare</a>
+      <nav id="nav" class="nav">
+        <a href="#/" data-nav="list">📖 <span>Recetat</span></a>
+        <a href="#/plan" data-nav="plan">📅 <span>Menyja</span> <b id="planBadge" class="badge"></b></a>
+        <a href="#/shop" data-nav="shop">🛒 <span>Blerjet</span> <b id="shopBadge" class="badge"></b></a>
+      </nav>
+      <button id="themeToggle" class="icon-btn" title="Ndrysho temën">🌙</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="timers" class="timers" hidden aria-live="polite"></div>
+
+  <footer class="footer">
+    <p>Bërë me ❤️ për kuzhinën kosovare · Të dhënat ruhen vetëm në këtë pajisje</p>
+    <div class="footer-tools">
+      <button id="exportBtn" class="link-btn">⬇ Ruaj kopje rezervë</button>
+      <label class="link-btn">⬆ Rikthe kopjen<input id="importFile" type="file" accept="application/json,.json" hidden /></label>
+    </div>
+  </footer>
+  <noscript>Ky aplikacion kërkon JavaScript.</noscript>
+</body>
+</html>
